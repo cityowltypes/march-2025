@@ -1,0 +1,19 @@
+{{page-title "Contact"}}
+
+<h1 class="display-1 fw-bold text-danger text-center my-5">
+	{{this.model.contact.modules.title}}
+</h1>
+
+<h1 class="display-1 fw-bold text-warning text-center my-5">
+	{{this.model.about.modules.title}}
+</h1>
+
+<button 
+	{{on 'click' this.doSomething}}
+	class="btn btn-lg btn-success" type="button">
+	Show me all the data
+</button>
+
+<div class="card animate__animated animate__fadeIn card-body d-none" id="something">Show something</div>
+
+{{outlet}}
